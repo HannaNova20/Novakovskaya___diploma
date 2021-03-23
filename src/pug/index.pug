@@ -1,0 +1,29 @@
+extends layout/layout
+
+block vars
+    - var pageTitle = 'Главная страница'
+    - var pageBodyClass = 'homepage'
+    - var pageHeaderClass = ''
+
+block content
+    section.first-section 
+        .container
+            .first-section__top
+                .top__content
+                    img(src=".././assets/imgs/logo.png" alt="logo" class="white__logo" href="#")
+                    nav.nav
+                        ul.nav__list
+                            li.nav__item
+                                a.nav__link(href="#") Log In
+                            li.nav__item
+                                a.nav__link(href="#") 844-332-6440
+                            li.nav__item
+                                a.nav__link.active(href="#") Get Started
+            .first-section__bottom
+                .bottom__content 
+                    h2.header__content Running the show has never been so easy.
+                    p.header__text Ready to put the human back in HR? Clerksy helps you set the stage with an inclusive and compliant workplace.
+                img(src=".././assets/imgs/header_people.png" alt="people" class="bottom__img")
+    section.second-section 
+        .container 
+            .second-section__content
